@@ -16,19 +16,19 @@ It stores multiple analog values using a newly introduced circuit called Laddere
 
 # Tools Used
 
-- SkywaterPDK_130: [skywater_130](https://github.com/google/skywater-pdk)
+- SkywaterPDK_130: [Skywater_130](https://github.com/google/skywater-pdk)
 - Magic Layout Tool: [Magic tool](http://opencircuitdesign.com/magic/)
 - XSchem Design Tool: [Design Tool](https://github.com/StefanSchippers/xschem)
 
 # Roadmap 🛣
 
 | Timeline | Description |
-|-----------------|---------------------------|
+|-----------------|-------------------|
 | Week 1 | Getting started with EDA tools (XSchem) |
 | Week 3 | Getting started with EDA tools (Magic) |
-| Week 4 - 5 | Replicating existing paper - Phase 1 |
-| Week 6 - 7 | Designing memory array with dual port functionality (skywater_130nm) |
-| Week 8 - 9 | Layout of the designed array (Magic) |
+| Week 4 - 5 | Phase 1 - Replicating existing paper  |
+| Week 6 - 7 | Phase 2 - Designing memory array with dual port functionality (skywater_130nm) |
+| Week 8 - 9 | Phase 3 - Layout of the designed array (Magic) |
 
 
 # Progress 🚧
