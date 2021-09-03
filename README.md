@@ -1,5 +1,4 @@
-# Title
-## Multi-Stable Analog Memory Array with simultaneous Read & Write functionality.
+# Multi-Stable Analog Memory Array with simultaneous Read & Write functionality.
 ### Work-in-progress
 
 # Abstract 🗒
@@ -16,9 +15,9 @@ It stores multiple analog values using a newly introduced circuit called Laddere
 
 # Tools Used
 
-- SkywaterPDK_130: [Skywater_130](https://github.com/google/skywater-pdk)
-- Magic Layout Tool: [Magic tool](http://opencircuitdesign.com/magic/)
-- XSchem Design Tool: [Design Tool](https://github.com/StefanSchippers/xschem)
+- [Skywater_130nm PDK](https://github.com/google/skywater-pdk)
+- [Magic Layout Tool](http://opencircuitdesign.com/magic/)
+- [XSchem Design Tool](https://github.com/StefanSchippers/xschem)
 
 # Roadmap 🛣
 
@@ -33,7 +32,6 @@ It stores multiple analog values using a newly introduced circuit called Laddere
 
 # Progress 🚧
 
-# Notes 📔
 
 ## Related Works 🧐
 
