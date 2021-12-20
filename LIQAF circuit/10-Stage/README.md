@@ -17,6 +17,8 @@ Simulated using ngspice on skywater <b>130nm pdk; tt corner at room termperature
 </table>
 </div> 
 
+If viewing in browser, use "Open image in new tab" option to view higher resolution image
+
 ## Pre-layout Simulation - DC Sweep
 
 <div align="center">
