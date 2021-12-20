@@ -63,8 +63,8 @@ N 990 -150 990 -100 { lab=VDD}
 N 930 -170 930 -140 { lab=GND}
 N 930 -370 930 -350 { lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 550 -300 0 0 {name=M1
-L=0.15
-W=1
+L=LN1
+W=WN1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -93,15 +93,15 @@ value="** manual skywater pdks install (with patches applied)
 .param mc_mm_switch=0
 .param mc_pr_switch=0
 "}
-C {devices/code_shown.sym} 1170 -230 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.1
+C {devices/code_shown.sym} 1170 -230 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.01
 .control
 run
 plot v(Vout1) v(Vout2)
 .endc
 .save all"}
 C {sky130_fd_pr/nfet_01v8.sym} 550 -180 0 0 {name=M2
-L=0.15
-W=1
+L=LN1
+W=WN1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -114,8 +114,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 740 -300 0 1 {name=M3
-L=0.15
-W=1
+L=LP1
+W=WP1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -128,8 +128,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 550 -410 0 0 {name=M4
-L=0.15
-W=1
+L=LP1
+W=WP1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -144,8 +144,8 @@ spiceprefix=X
 C {devices/gnd.sym} 570 -120 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 570 -460 0 0 {name=l3 lab=VDD}
 C {sky130_fd_pr/nfet_01v8.sym} 930 -390 3 1 {name=M5
-L=0.15
-W=1
+L=LN2
+W=WN2
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -158,8 +158,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 990 -280 3 0 {name=M6
-L=0.15
-W=1
+L=LP2
+W=WP2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -172,8 +172,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 930 -190 3 1 {name=M7
-L=0.15
-W=1
+L=LN2
+W=WN2
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -186,8 +186,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 990 -80 3 0 {name=M8
-L=0.15
-W=1
+L=LP2
+W=WP2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -209,3 +209,14 @@ C {devices/vdd.sym} 990 -330 0 0 {name=l12 lab=VDD}
 C {devices/vdd.sym} 990 -150 0 0 {name=l13 lab=VDD}
 C {devices/gnd.sym} 930 -140 0 0 {name=l14 lab=GND}
 C {devices/gnd.sym} 930 -350 0 0 {name=l15 lab=GND}
+C {devices/code_shown.sym} 1150 -700 0 0 {name=PARAMETERS only_toplevel=false value="
+.param LP1=0.15
+.param WP1=25
+.param LN1=0.15
+.param WN1=12.5
+
+.param LP2=0.15
+.param WP2=5
+.param LN2=0.15
+.param WN2=25
+"}
