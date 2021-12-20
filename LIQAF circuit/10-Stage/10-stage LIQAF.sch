@@ -317,7 +317,7 @@ value="** manual skywater pdks install (with patches applied)
 .param mc_pr_switch=0
 .param LP1=0.15
 "}
-C {devices/code_shown.sym} 1220 -1620 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.1
+C {devices/code_shown.sym} 1220 -1620 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.01
 .control
 run
 plot v(Vout1) v(Vout2) v(Vout3) v(Vout4) v(Vout5) v(Vout6) v(Vout7) v(Vout8) v(Vout9) v(Vout10) 
@@ -924,12 +924,12 @@ C {devices/lab_pin.sym} 830 -310 1 0 {name=l55 sig_type=std_logic lab=Vout10}
 C {devices/gnd.sym} 600 -130 0 0 {name=l56 lab=GND}
 C {devices/code_shown.sym} 1180 -2060 0 0 {name=PARAMETERS only_toplevel=false value="
 .param LP1=0.15
-.param WP1=1
+.param WP1=25
 .param LN1=0.15
-.param WN1=1
+.param WN1=12.5
 
 .param LP2=0.15
-.param WP2=1
+.param WP2=5
 .param LN2=0.15
-.param WN2=1
+.param WN2=25
 "}
