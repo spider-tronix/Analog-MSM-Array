@@ -36,7 +36,7 @@ N 1850 -1990 1850 -1980 { lab=VOUT1}
 N 1820 -1980 1850 -1980 { lab=VOUT1}
 N 1820 -1980 1820 -1920 { lab=VOUT1}
 N 1670 -1860 1820 -1860 { lab=VOUT2}
-N 1880 -2050 1880 -2030 { lab=VDD}
+N 1880 -2050 1880 -2030 { lab=#net3}
 N 1770 -2020 1770 -1980 { lab=VOUT1}
 N 1520 -1920 1540 -1920 { lab=VSS}
 N 1540 -1920 1540 -1890 { lab=VSS}
@@ -148,35 +148,35 @@ N 1520 -980 1520 -950 { lab=VOUT6}
 N 1520 -750 1520 -720 { lab=VOUT7}
 N 1520 -520 1520 -490 { lab=VOUT8}
 N 1520 -300 1520 -270 { lab=VOUT9}
-N 1910 -1620 1910 -1550 { lab=#net3}
+N 1910 -1620 1910 -1550 { lab=#net4}
 N 1820 -1620 1850 -1620 { lab=VOUT3}
 N 1940 -1600 1940 -1550 { lab=VDD}
 N 1880 -1620 1880 -1590 { lab=VSS}
-N 1910 -1450 1910 -1380 { lab=#net4}
+N 1910 -1450 1910 -1380 { lab=#net5}
 N 1820 -1450 1850 -1450 { lab=VOUT4}
 N 1940 -1430 1940 -1380 { lab=VDD}
 N 1880 -1450 1880 -1420 { lab=VSS}
-N 1910 -1250 1910 -1180 { lab=#net5}
+N 1910 -1250 1910 -1180 { lab=#net6}
 N 1820 -1250 1850 -1250 { lab=VOUT5}
 N 1940 -1230 1940 -1180 { lab=VDD}
 N 1880 -1250 1880 -1220 { lab=VSS}
-N 1910 -1040 1910 -970 { lab=#net6}
+N 1910 -1040 1910 -970 { lab=#net7}
 N 1820 -1040 1850 -1040 { lab=VOUT6}
 N 1940 -1020 1940 -970 { lab=VDD}
 N 1880 -1040 1880 -1010 { lab=VSS}
-N 1910 -820 1910 -750 { lab=#net7}
+N 1910 -820 1910 -750 { lab=#net8}
 N 1820 -820 1850 -820 { lab=VOUT7}
 N 1940 -800 1940 -750 { lab=VDD}
 N 1880 -820 1880 -790 { lab=VSS}
-N 1910 -590 1910 -520 { lab=#net8}
+N 1910 -590 1910 -520 { lab=#net9}
 N 1820 -590 1850 -590 { lab=VOUT8}
 N 1940 -570 1940 -520 { lab=VDD}
 N 1880 -590 1880 -560 { lab=VSS}
-N 1910 -360 1910 -290 { lab=#net9}
+N 1910 -360 1910 -290 { lab=#net10}
 N 1820 -360 1850 -360 { lab=VOUT9}
 N 1940 -340 1940 -290 { lab=VDD}
 N 1880 -360 1880 -330 { lab=VSS}
-N 1910 -130 1910 -60 { lab=#net10}
+N 1910 -130 1910 -60 { lab=#net11}
 N 1820 -130 1850 -130 { lab=VOUT10}
 N 1940 -110 1940 -60 { lab=VDD}
 N 1880 -130 1880 -100 { lab=VSS}
@@ -282,7 +282,6 @@ N 1540 -70 1540 -40 { lab=VSS}
 N 1350 -1830 1450 -1830 { lab=VIN}
 N 1650 -320 1650 -240 { lab=VDD}
 N 1540 -40 1540 -30 { lab=VSS}
-N 1520 -30 1540 -30 { lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 1500 -1920 0 0 {name=M1
 L=LN1
 W=WN1
@@ -894,5 +893,6 @@ C {devices/lab_pin.sym} 1650 -320 1 0 {name=l37 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1940 -340 1 0 {name=l38 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1940 -110 1 0 {name=l39 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1940 0 3 0 {name=l40 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1880 -2050 1 0 {name=l20 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1650 -1970 1 0 {name=l21 sig_type=std_logic lab=VDD}
+C {devices/iopin.sym} 1540 -30 1 0 {name=p3 lab=VSS}
+C {devices/iopin.sym} 1880 -2050 3 0 {name=p4 lab=VDD}
