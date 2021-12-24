@@ -128,7 +128,6 @@ N 1710 -240 1730 -240 { lab=VIN}
 N 1520 -240 1540 -240 { lab=VSS}
 N 1540 -240 1540 -210 { lab=VSS}
 N 1650 -240 1670 -240 { lab=VDD}
-N 1650 -290 1650 -240 { lab=VDD}
 N 1520 -210 1520 -180 { lab=VOUT10}
 N 1520 -180 1520 -100 { lab=VOUT10}
 N 1450 -1800 1450 -70 { lab=VIN}
@@ -171,13 +170,13 @@ N 1940 -800 1940 -750 { lab=VDD}
 N 1880 -820 1880 -790 { lab=VSS}
 N 1910 -590 1910 -520 { lab=#net8}
 N 1820 -590 1850 -590 { lab=VOUT8}
-N 1940 -570 1940 -520 { lab=#net9}
+N 1940 -570 1940 -520 { lab=VDD}
 N 1880 -590 1880 -560 { lab=VSS}
-N 1910 -360 1910 -290 { lab=#net10}
+N 1910 -360 1910 -290 { lab=#net9}
 N 1820 -360 1850 -360 { lab=VOUT9}
 N 1940 -340 1940 -290 { lab=VDD}
 N 1880 -360 1880 -330 { lab=VSS}
-N 1910 -130 1910 -60 { lab=#net11}
+N 1910 -130 1910 -60 { lab=#net10}
 N 1820 -130 1850 -130 { lab=VOUT10}
 N 1940 -110 1940 -60 { lab=VDD}
 N 1880 -130 1880 -100 { lab=VSS}
@@ -281,6 +280,9 @@ N 1770 -1880 1770 -1860 { lab=VOUT2}
 N 1520 -70 1540 -70 { lab=VSS}
 N 1540 -70 1540 -40 { lab=VSS}
 N 1350 -1830 1450 -1830 { lab=VIN}
+N 1650 -320 1650 -240 { lab=VDD}
+N 1540 -40 1540 -30 { lab=VSS}
+N 1520 -30 1540 -30 { lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 1500 -1920 0 0 {name=M1
 L=LN1
 W=WN1
@@ -843,47 +845,7 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 1350 -1830 0 0 {name=p1 lab=VIN}
 C {devices/iopin.sym} 1520 -2080 3 0 {name=p2 lab=VDD}
-C {devices/iopin.sym} 1880 -2050 3 0 {name=p3 lab=VDD}
-C {devices/iopin.sym} 1650 -1970 3 0 {name=p4 lab=VDD}
-C {devices/iopin.sym} 1940 -1770 3 0 {name=p5 lab=VDD}
-C {devices/iopin.sym} 1940 -1950 3 0 {name=p6 lab=VDD}
-C {devices/iopin.sym} 1650 -1800 3 0 {name=p7 lab=VDD}
-C {devices/iopin.sym} 1650 -1610 3 0 {name=p8 lab=VDD}
-C {devices/iopin.sym} 1940 -1600 3 0 {name=p9 lab=VDD}
-C {devices/iopin.sym} 1650 -1400 3 0 {name=p10 lab=VDD}
-C {devices/iopin.sym} 1940 -1430 3 0 {name=p11 lab=VDD}
-C {devices/iopin.sym} 1650 -1190 3 0 {name=p12 lab=VDD}
-C {devices/iopin.sym} 1940 -1230 3 0 {name=p13 lab=VDD}
-C {devices/iopin.sym} 1940 -1020 3 0 {name=p14 lab=VDD}
-C {devices/iopin.sym} 1650 -970 3 0 {name=p15 lab=VDD}
-C {devices/iopin.sym} 1650 -740 3 0 {name=p16 lab=VDD}
-C {devices/iopin.sym} 1940 -800 3 0 {name=p17 lab=VDD}
-C {devices/iopin.sym} 1650 -510 3 0 {name=p18 lab=VDD}
-C {devices/iopin.sym} 1650 -290 3 0 {name=p19 lab=VDD}
-C {devices/iopin.sym} 1940 -340 3 0 {name=p20 lab=VDD}
-C {devices/iopin.sym} 1940 -110 3 0 {name=p21 lab=VDD}
-C {devices/iopin.sym} 1540 -1890 1 0 {name=p23 lab=VSS}
-C {devices/iopin.sym} 1880 -1970 1 0 {name=p24 lab=VSS}
-C {devices/iopin.sym} 1540 -1720 1 0 {name=p25 lab=VSS}
-C {devices/iopin.sym} 1880 -1760 1 0 {name=p26 lab=VSS}
-C {devices/iopin.sym} 1540 -1530 1 0 {name=p27 lab=VSS}
-C {devices/iopin.sym} 1880 -1590 1 0 {name=p28 lab=VSS}
-C {devices/iopin.sym} 1540 -1320 1 0 {name=p29 lab=VSS}
-C {devices/iopin.sym} 1880 -1420 1 0 {name=p30 lab=VSS}
-C {devices/iopin.sym} 1540 -1110 1 0 {name=p31 lab=VSS}
-C {devices/iopin.sym} 1880 -1220 1 0 {name=p32 lab=VSS}
-C {devices/iopin.sym} 1540 -890 1 0 {name=p33 lab=VSS}
-C {devices/iopin.sym} 1880 -1010 1 0 {name=p34 lab=VSS}
-C {devices/iopin.sym} 1540 -660 1 0 {name=p35 lab=VSS}
-C {devices/iopin.sym} 1880 -790 1 0 {name=p36 lab=VSS}
-C {devices/iopin.sym} 1540 -430 1 0 {name=p37 lab=VSS}
-C {devices/iopin.sym} 1880 -560 1 0 {name=p38 lab=VSS}
-C {devices/iopin.sym} 1540 -210 1 0 {name=p39 lab=VSS}
 C {devices/iopin.sym} 1520 -10 1 0 {name=p40 lab=VSS}
-C {devices/iopin.sym} 1540 -40 1 0 {name=p41 lab=VSS}
-C {devices/iopin.sym} 1880 -330 1 0 {name=p42 lab=VSS}
-C {devices/iopin.sym} 1940 0 1 0 {name=p43 lab=VSS}
-C {devices/iopin.sym} 1880 -100 1 0 {name=p44 lab=VSS}
 C {devices/opin.sym} 1770 -2020 3 0 {name=p22 lab=VOUT1}
 C {devices/opin.sym} 1770 -1880 3 0 {name=p45 lab=VOUT2}
 C {devices/opin.sym} 1770 -1700 3 0 {name=p46 lab=VOUT3}
@@ -894,3 +856,43 @@ C {devices/opin.sym} 1770 -900 3 0 {name=p50 lab=VOUT7}
 C {devices/opin.sym} 1770 -660 3 0 {name=p51 lab=VOUT8}
 C {devices/opin.sym} 1770 -440 3 0 {name=p52 lab=VOUT9}
 C {devices/opin.sym} 1770 -220 3 0 {name=p53 lab=VOUT10}
+C {devices/lab_pin.sym} 1540 -1890 2 0 {name=l1 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -1970 3 0 {name=l2 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -1720 3 0 {name=l3 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -1760 3 0 {name=l4 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -1530 3 0 {name=l5 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -1590 3 0 {name=l6 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -1320 3 0 {name=l7 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -1420 3 0 {name=l8 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -1110 3 0 {name=l9 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -1220 3 0 {name=l10 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -890 3 0 {name=l11 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -1010 3 0 {name=l12 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -790 3 0 {name=l13 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -660 3 0 {name=l14 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -430 3 0 {name=l15 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -560 3 0 {name=l16 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -330 3 0 {name=l17 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1540 -210 3 0 {name=l18 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -100 3 0 {name=l19 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1940 -1950 1 0 {name=l22 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -1800 1 0 {name=l23 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -1770 1 0 {name=l24 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -1610 1 0 {name=l25 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -1600 1 0 {name=l26 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -1400 1 0 {name=l27 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -1430 1 0 {name=l28 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -1190 1 0 {name=l29 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -1230 1 0 {name=l30 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -970 1 0 {name=l31 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -1020 1 0 {name=l32 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -740 1 0 {name=l33 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -800 1 0 {name=l34 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -510 1 0 {name=l35 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -570 1 0 {name=l36 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -320 1 0 {name=l37 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -340 1 0 {name=l38 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 -110 1 0 {name=l39 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1940 0 3 0 {name=l40 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1880 -2050 1 0 {name=l20 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1650 -1970 1 0 {name=l21 sig_type=std_logic lab=VDD}
