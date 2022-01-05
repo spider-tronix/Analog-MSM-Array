@@ -1,0 +1,62 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {type="subcircuit"
+format="@name @pinlist @symname WP0=@WP0 LP0=@LP0 WP1=@WP1 LP1=@LP1 WP2=@WP2 LP2=@LP2 WN0=@WN0 LN0=@LN0 WN1=@WN1 LN1=@LN1 WN2=@WP2 LN2=@LN2"
+template="name=X1 WP0=25 LP0=0.15 WP1=25 LP1=0.15 WP2=5 LP2=0.15 WN0=12.5 LN0=0.15 WN1=12.5 LN1=0.15 WN2=25 LN2=0.15"}
+E {}
+L 4 -130 -140 130 -140 {}
+L 4 -130 140 130 140 {}
+L 4 -130 -140 -130 140 {}
+L 4 130 -140 130 140 {}
+L 4 130 -90 150 -90 {}
+L 4 130 -70 150 -70 {}
+L 4 -150 0 -130 0 {}
+L 4 130 -50 150 -50 {}
+L 4 130 -30 150 -30 {}
+L 4 130 -10 150 -10 {}
+L 4 130 10 150 10 {}
+L 4 130 30 150 30 {}
+L 4 130 50 150 50 {}
+L 4 130 70 150 70 {}
+L 4 130 90 150 90 {}
+L 7 130 -120 150 -120 {}
+L 7 -150 -120 -130 -120 {}
+L 7 130 120 150 120 {}
+L 7 -150 120 -130 120 {}
+B 5 147.5 -122.5 152.5 -117.5 {name=VDD dir=inout }
+B 5 -152.5 -122.5 -147.5 -117.5 {name=VDD dir=inout }
+B 5 147.5 -92.5 152.5 -87.5 {name=VOUT1 dir=out }
+B 5 147.5 -72.5 152.5 -67.5 {name=VOUT2 dir=out }
+B 5 -152.5 -2.5 -147.5 2.5 {name=VIN dir=in }
+B 5 147.5 -52.5 152.5 -47.5 {name=VOUT3 dir=out }
+B 5 147.5 -32.5 152.5 -27.5 {name=VOUT4 dir=out }
+B 5 147.5 -12.5 152.5 -7.5 {name=VOUT5 dir=out }
+B 5 147.5 7.5 152.5 12.5 {name=VOUT6 dir=out }
+B 5 147.5 27.5 152.5 32.5 {name=VOUT7 dir=out }
+B 5 147.5 47.5 152.5 52.5 {name=VOUT8 dir=out }
+B 5 147.5 67.5 152.5 72.5 {name=VOUT9 dir=out }
+B 5 147.5 87.5 152.5 92.5 {name=VOUT10 dir=out }
+B 5 147.5 117.5 152.5 122.5 {name=VSS dir=inout }
+B 5 -152.5 117.5 -147.5 122.5 {name=VSS dir=inout }
+T {@symname} -45 -6 0 0 0.3 0.3 {}
+T {@name} 135 -152 0 0 0.2 0.2 {}
+T {VDD} 125 -124 0 1 0.2 0.2 {}
+T {VDD} -105 -124 0 1 0.2 0.2 {}
+T {VOUT1} 125 -94 0 1 0.2 0.2 {}
+T {VOUT2} 125 -74 0 1 0.2 0.2 {}
+T {VIN} -125 -4 0 0 0.2 0.2 {}
+T {VOUT3} 125 -54 0 1 0.2 0.2 {}
+T {VOUT4} 125 -34 0 1 0.2 0.2 {}
+T {VOUT5} 125 -14 0 1 0.2 0.2 {}
+T {VOUT6} 125 6 0 1 0.2 0.2 {}
+T {VOUT7} 125 26 0 1 0.2 0.2 {}
+T {VOUT8} 125 46 0 1 0.2 0.2 {}
+T {VOUT9} 125 66 0 1 0.2 0.2 {}
+T {VOUT10} 125 86 0 1 0.2 0.2 {}
+T {VSS} 125 116 0 1 0.2 0.2 {}
+T {VSS} -105 116 0 1 0.2 0.2 {}
