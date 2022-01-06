@@ -82,7 +82,7 @@ C {devices/code_shown.sym} 800 -610 0 0 {name=SPICE only_toplevel=false value="
 let start_WN1 = 1
 let stop_WN1 = 10
 let delta_WN1 = 1
-let actual_WN1 = 1
+let actual_WN1 = start_WN1
 
 
 while actual_WN1 le stop_WN1
