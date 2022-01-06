@@ -82,9 +82,15 @@ C {devices/code_shown.sym} 800 -610 0 0 {name=SPICE only_toplevel=false value="
 let start_WN1 = 1
 let stop_WN1 = 10
 let delta_WN1 = 1
-let actual_WN1 = start_WN1
+let actual_WN1 = 1
+
 
 while actual_WN1 le stop_WN1
+
+ echo RUN WN1= $&actual_WN1
+
+ alterparam WN1 = $&actual_WN1
+ reset
  dc V1 0 1.8 0.01
  * plot v(Vout)
  * print XM1[w] 
@@ -93,7 +99,8 @@ while actual_WN1 le stop_WN1
  alterparam WN1=100
  reset
 end
-plot dc1.v(Vout) dc2.v(Vout) dc10.v(Vout)
+
+plot dc1.v(Vout) dc2.v(Vout) dc3.v(Vout) dc4.v(Vout) dc5.v(Vout) dc6.v(Vout) dc7.v(Vout) dc8.v(Vout) dc9.v(Vout) dc10.v(Vout)
 .endc
 .save all"}
 C {sky130_fd_pr/nfet_01v8.sym} 460 -260 0 0 {name=M2
