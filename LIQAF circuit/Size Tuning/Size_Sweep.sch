@@ -51,7 +51,7 @@ C {devices/gnd.sym} 310 -350 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 120 -440 0 0 {name=V2 value=1.8}
 C {devices/gnd.sym} 120 -380 0 0 {name=l6 lab=GND}
 C {devices/vdd.sym} 120 -520 0 0 {name=l7 lab=VDD}
-C {devices/code.sym} 800 -410 0 0 {name=TT_MODELS
+C {devices/code.sym} 790 -800 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="** manual skywater pdks install (with patches applied)
@@ -64,11 +64,12 @@ value="** manual skywater pdks install (with patches applied)
 .param mc_pr_switch=0
 .param LP1=0.15
 "}
-C {devices/code_shown.sym} 810 -220 0 0 {name=SPICE only_toplevel=false value="
+C {devices/code_shown.sym} 800 -610 0 0 {name=SPICE only_toplevel=false value="
+.option method=gear seed=12
 .param LP1=0.15
 .param WP1=25
 .param LN1=0.15
-.param WN1=12.5
+.param WN1=1
 
 .param LP2=0.15
 .param WP2=5
@@ -84,15 +85,15 @@ let delta_WN1 = 1
 let actual_WN1 = start_WN1
 
 while actual_WN1 le stop_WN1
- *alter m.xm1.msky130_fd_pr__nfet_01v8 W = actual_WN1
- alterparam WN1=actual_WN1
- reset
  dc V1 0 1.8 0.01
  * plot v(Vout)
  * print XM1[w] 
  let actual_WN1 = actual_WN1 + delta_WN1
+ *alter m.xm1.msky130_fd_pr__nfet_01v8 W = actual_WN1
+ alterparam WN1=100
+ reset
 end
-plot dc1.v(Vout) dc5.v(Vout) dc10.v(Vout)
+plot dc1.v(Vout) dc2.v(Vout) dc10.v(Vout)
 .endc
 .save all"}
 C {sky130_fd_pr/nfet_01v8.sym} 460 -260 0 0 {name=M2
