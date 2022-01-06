@@ -78,13 +78,15 @@ C {devices/code_shown.sym} 810 -220 0 0 {name=SPICE only_toplevel=false value="
 .dc V1 0 1.8 0.01
 .control
 
-let start_WN1 = 0.000001
-let stop_WN1 = 0.0001
-let delta_WN1 = 0.00001
+let start_WN1 = 1
+let stop_WN1 = 10
+let delta_WN1 = 1
 let actual_WN1 = start_WN1
 
 while actual_WN1 le stop_WN1
- alter m.xm1.msky130_fd_pr__nfet_01v8 W = actual_WN1
+ *alter m.xm1.msky130_fd_pr__nfet_01v8 W = actual_WN1
+ alterparam WN1=actual_WN1
+ reset
  dc V1 0 1.8 0.01
  * plot v(Vout)
  * print XM1[w] 
