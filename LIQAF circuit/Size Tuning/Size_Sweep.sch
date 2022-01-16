@@ -79,7 +79,7 @@ C {devices/code_shown.sym} 750 -920 0 0 {name=SPICE only_toplevel=false value="
 .dc V1 0 1.8 0.01
 .control
 
-let start_WN1 = 1
+let start_WN1 = 76
 let stop_WN1 = 100
 let delta_WN1 = 0.5
 let actual_WN1 = start_WN1
@@ -102,8 +102,8 @@ while actual_WN1 le stop_WN1
   set wr_singlescale
   set wr_vecnames
   set appendwrite
-  wrdata sim_data.txt actual_WN1 actual_WP1
-  wrdata sim_data.txt v(Vout)
+  wrdata /home/sudhar/Documents/sim_data.txt actual_WN1 actual_WP1
+  wrdata /home/sudhar/Documents/sim_data.txt v(Vout)
  end
  let actual_WP1 = start_WP1
  let actual_WN1 = actual_WN1 + delta_WN1
