@@ -795,7 +795,6 @@ value="** manual skywater pdks install (with patches applied)
 
 .param mc_mm_switch=0
 .param mc_pr_switch=0
-.param LP1=0.15
 "}
 C {devices/code_shown.sym} 1500 -890 0 0 {name=PARAMETERS only_toplevel=false value="
 .param LP1=0.15
